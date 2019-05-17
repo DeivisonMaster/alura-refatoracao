@@ -4,7 +4,7 @@ public class Vagao {
 
 	public int reservados;
 	
-	public int reservados() {
+	public int lugaresReservados() {
 		return reservados;
 	}
 
