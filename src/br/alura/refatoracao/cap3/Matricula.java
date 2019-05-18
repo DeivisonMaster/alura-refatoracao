@@ -19,4 +19,11 @@ public class Matricula {
 	public Calendar getExpiracao() {
 		return expiracao;
 	}
+
+	public boolean estaValida() {
+		if(!this.isTrial() && this.getExpiracao().after(Calendar.getInstance())){
+			return true;
+		}
+		return false;
+	}
 }
